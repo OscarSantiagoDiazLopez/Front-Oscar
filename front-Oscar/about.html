@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre Nosotros - MiSitio</title>
+  <link rel="stylesheet" href="estilos.css">
+  <!-- Librería SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo">MiSitio</a>
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="about.html" class="nav-link active">Sobre Nosotros</a>
+    </div>
+    <div class="nav-right">
+      <span id="userName" class="user-name"></span>
+      <button id="loginBtn" class="icon-btn" title="Login">
+        <span class="login-icon">🔒</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h1>Nuestra historia</h1>
+      <p>En <strong>MiSitio</strong>, somos más que una empresa tecnológica: somos un equipo que cree en el poder de las ideas.  
+      Desde nuestros inicios, nos hemos dedicado a construir soluciones digitales que inspiran confianza, innovación y crecimiento.  
+      Nuestra pasión es acompañarte en cada paso de tu evolución digital, ofreciendo herramientas accesibles, seguras y adaptadas a tu realidad.</p>
+    </section>
+  </main>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Iniciar Sesión</h2>
+      <form id="formLogin">
+        <input type="text" id="login" placeholder="Usuario" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-box">
+      <p>OSCAR SANTIAGO DIAZ LOPEZ</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
